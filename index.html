@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skill Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Skill Tracker</h1>
+        <p>Track what you're learning. Measure your progress.</p>
+    </header>
+
+    <main>
+
+      <!-- Statistics -->
+        <section class="stats">
+
+          <div class="stat-card">
+            <h2 id="totalSkills">0</h2>
+           <p>Total Skills</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="completedSkills">0</h2>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="learningSkills">0</h2>
+                <p>Learning</p>
+            </div>
+
+        </section>
+
+
+        <!-- Add Skill -->
+        <section class="skill-form">
+
+            <h2>Add a Skill</h2>
+
+            <input
+                type="text"
+                id="skillInput"
+                placeholder="e.g. JavaScript"
+            >
+
+            <select id="categoryInput">
+                <option value="">Select category</option>
+             <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+              <option value="DSA">DSA</option>
+             <option value="Tools">Tools</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <button id="addBtn">Add Skill</button>
+
+            <p id="message"></p>
+
+        </section>
+
+
+        <!-- Skills -->
+        <section class="skills-section">
+
+       <div class="section-header">
+         <h2>My Skills</h2>
+
+            <input
+                    type="text"
+                id="searchInput"
+                    placeholder="Search skills..."
+                >
+          </div>
+
+       <div id="skillContainer"></div>
+
+    </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
